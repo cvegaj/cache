@@ -1,5 +1,5 @@
 # Tarea Programada 1/IE-0521 Estructuras de Computadores Digitales II
-# Simulador de Memria Cache con diferentes niveles de asociatividad
+## Simulador de Memria Cache con diferentes niveles de asociatividad
 #
 # Autores:
 #         Carla Vega J.    B
