@@ -4,21 +4,22 @@
 ### Autores:
 ####         Carla Vega J.    B
 ####         Lennon Núñez M.  B34943
-#### Profesor: José Daniel Hernández
+### Profesor: 
+####   José Daniel Hernández
 ######################################################################
 #
-# Niveles de Asociatividad Disponibles (<parámetro del código>)
-#               - Directo ()
-#               - 2-Way Associative ()
-#               - 4-Way Associative ()
+## Niveles de Asociatividad Disponibles (<parámetro del código>)
+#####           - Directo ()
+#####           - 2-Way Associative ()
+#####           - 4-Way Associative ()
 # 
-# Parámetros de Entrada
-#               - Asociatividad
-#               - Tamaño del Cache
-#               - Tamaño del Bloque
+## Parámetros de Entrada
+               <Asociatividad>
+               <Tamaño del Cache>
+               <Tamaño del Bloque>
 #
 # Comando para correr el programa
-#  $ ./main.cpp <asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
+#  $ ./main.cpp <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
 #     Donde:
 #      <asociatividad>      - Asociatividad corresponde al nivel de 
 #                   asociatividad, esperando como parámetro 
