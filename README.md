@@ -13,7 +13,7 @@
 #####           - 2-Way Associative ()
 #####           - 4-Way Associative ()
 # 
-## Parámetros de Entrada
+ Parámetros de Entrada |
                 ---------------|---------------
                <Asociatividad> | Asociatividad corresponde al nivel de asociatividad, esperando como parámetro
                <Tamaño del Cache> | Tamaño del Cache deseado, esperando como parámetro 
