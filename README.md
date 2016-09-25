@@ -14,13 +14,9 @@
 #####           - 4-Way Associative ()
 # 
 ## Parámetros de Entrada
-               <Asociatividad>
-               <Tamaño del Cache>
-               <Tamaño del Bloque>
+               <Asociatividad> | Asociatividad corresponde al nivel de asociatividad, esperando como parámetro
+               <Tamaño del Cache> | Tamaño del Cache deseado, esperando como parámetro 
+               <Tamaño del Bloque> | Tamaño del Bloque deseado, esperando como parámetro 
 #
 ## Comando para correr el programa
-    $ ./main.cpp <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
-###     Donde:
- <asociatividad>    #  - Asociatividad corresponde al nivel de asociatividad, esperando como parámetro 
- <Tamaño del Cache>  # - Tamaño del Cache deseado, esperando como parámetro 
- <Tamaño del Bloque> # - Tamaño del Bloque deseado, esperando como parámetro 
+    $ ./main.cpp <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque> 
