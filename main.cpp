@@ -4,9 +4,32 @@
 
 using namespace std;
 
+class cache{
+
+  private:
+    int iTagSize = 0;
+    int iIndexSize = 0;
+    int iOffsetSize = 0;
+    unsigned long ulAddress = 0;
+
+  public:
+    long lBlockSize;
+    int iAssociativity;
+    long lCacheSize;
+
+    //Constructor con 3 parametros
+    cache(int iAssoc,long lCSize,long lBSize){
+      lBlockSize = lBSize;
+      iAssociativity = iAssoc;
+      lCacheSize = lCSize;
+    }
+    //Destructor >:O
+    ~cache(){}
+
+};
+
 int main(int arcg, char* argv[]){
 
-  bool (int arcg,)
   long long llParameter[3];
   llParameter[0]=atoll(argv[1]);
   llParameter[1]=atoll(argv[2]);
