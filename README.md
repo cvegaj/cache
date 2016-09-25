@@ -2,9 +2,9 @@
 ## Tarea Programada 1/IE-0521 Estructuras de Computadores Digitales II
 #
 ### Autores:
-         Carla Vega J.    B
-         Lennon Núñez M.  B34943
-### Profesor: José Daniel Hernández
+####         Carla Vega J.    B
+####         Lennon Núñez M.  B34943
+#### Profesor: José Daniel Hernández
 ######################################################################
 #
 # Niveles de Asociatividad Disponibles (<parámetro del código>)
