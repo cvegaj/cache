@@ -9,14 +9,20 @@
 ######################################################################
 #
 ## Niveles de Asociatividad Disponibles (<parámetro del código>)
-#####           - Directo ()
-#####           - 2-Way Associative ()
-#####           - 4-Way Associative ()
+#####           - Directo (*1*)
+#####           - 2-Way Associative (*2*)
+#####           - 4-Way Associative (*3*)
 # 
 ## Parámetros de Entrada 
-####   Asociatividad | Nivel de asociatividad deseado, esperando como parámetro
-####   Tamaño del Cache | Tamaño del Cache deseado, esperando como parámetro 
-####   Tamaño del Bloque | Tamaño del Bloque deseado, esperando como parámetro 
+####   Asociatividad | Nivel de asociatividad deseado, esperando como parámetro los posibles valores enteros 1, 2 ó 3, según la asociatividad correspondiente.
+####   Tamaño del Cache | Tamaño del Cache deseado, esperando como parámetro un valor entero.
+####   Tamaño del Bloque | Tamaño del Bloque deseado, esperando como parámetro un valor entero.
 #
-## Comando para correr el programa
-    $ ./main.cpp <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque> 
+## Corriendo el Programa
+    $ make -f Makefile
+    $ ./cache <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
+#
+#### Se generará el ejecutable *cache*, el cuál utilizará el archivo *aligned.trace* ya incluido en el repositorio. Ingrese los parámetros requeridos y en pantalla se mostrará los resultados para cada solicitud del *.trace*. 
+#
+## Eliminando Archivos Generados
+    $ make clean
