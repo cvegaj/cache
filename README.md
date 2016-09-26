@@ -9,9 +9,9 @@
 ######################################################################
 #
 ## Niveles de Asociatividad Disponibles (<parámetro del código>)
-#####           - Directo (1)
-#####           - 2-Way Associative (2)
-#####           - 4-Way Associative (3)
+#####           - Directo (*1*)
+#####           - 2-Way Associative (*2*)
+#####           - 4-Way Associative (*3*)
 # 
 ## Parámetros de Entrada 
 ####   Asociatividad | Nivel de asociatividad deseado, esperando como parámetro los posibles valores enteros 1, 2 ó 3, según la asociatividad correspondiente.
@@ -23,3 +23,6 @@
     $ ./cache <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
 #
 #### Se generará el ejecutable *cache*, el cuál utilizará el archivo *aligned.trace* ya incluido en el repositorio. Ingrese los parámetros requeridos y en pantalla se mostrará los resultados para cada solicitud del *.trace*. 
+#
+## Eliminando Archivos Generados
+    $ make clean
