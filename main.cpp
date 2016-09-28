@@ -43,13 +43,17 @@ class cache{
 
 //para dividir la direccion en tag, index y offset
 void cache::splitAddress(){
+  lIndexMask = 0;
   for(int i = 0; i < iIndexSize; i++){
     lIndexMask <<= 1; //se crea una mascara para index
     lIndexMask |= 1; //indexMask or 1
   }
   lIndex = lAddress >> (iOffsetSize);
   lIndex = lIndex & lIndexMask;
+  //cout << "Address: " << lAddress << endl;
+  //cout << "Index: " << lIndex << endl;
   lTag = lAddress >> (iOffsetSize+iIndexSize);
+  //cout << "Tag: " << lTag << endl;
 }
 
 //despues de saber en que set estoy de acuerdo al index
@@ -59,6 +63,7 @@ bool cache::readAddress(long lAddr){
   for(int i=0; i<iAssociativity; i++){ //para buscar la cantidad de bloques
     if (vBlocks[lIndex][i].bValidBit){
       if (vBlocks[lIndex][i].lBlockTag == lTag){
+        //cout << "Hit Yeah! " << endl;
         return true;
       }
     }
@@ -66,6 +71,7 @@ bool cache::readAddress(long lAddr){
   iRand = rand() % iAssociativity;
   vBlocks[lIndex][iRand].bValidBit = true;
   vBlocks[lIndex][iRand].lBlockTag = lTag;
+  //cout << "Miss, escribiendo sobre el bloque: " << iRand << " del set: "<< lIndex << endl;
   return false;
 }
 
@@ -85,10 +91,14 @@ int main(int arcg, char* argv[]){
 	double dMissRate;
   string line;
   cache myCache(llParameter[0],llParameter[1],llParameter[2]);
-
+  int i = 0;
+  //while ( i < 1 ) {
   while ( getline (datos,line) ) {
     getline(datos,line);
     line.erase(line.begin()+8,line.end());
+
+  //  lAddr = 133333;
+    //i = 1;
     istringstream(line) >> std::hex >> lAddr;
   	bHit = myCache.readAddress(lAddr);
     if(bHit){
