@@ -13,6 +13,7 @@ struct block{
   long lBlockTag = 0;
 };
 
+\\dados los valores se calcula tamaño en bits del index y del offset necesarios en la función splitAddress
 class cache{
   private:
     int iTagSize, iIndexSize;
@@ -75,6 +76,8 @@ bool cache::readAddress(long lAddr){
   return false;
 }
 
+
+//se reciben los parametros del programa
 int main(int arcg, char* argv[]){
 
   long long llParameter[3];
@@ -90,6 +93,8 @@ int main(int arcg, char* argv[]){
 	long long llMisses = 0;
 	double dMissRate;
   string line;
+
+  //cantidad de accesos totales, hits y misses
   cache myCache(llParameter[0],llParameter[1],llParameter[2]);
   int i = 0;
   //while ( i < 1 ) {
