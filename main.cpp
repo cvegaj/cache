@@ -13,7 +13,7 @@ struct block{
   long lBlockTag = 0;
 };
 
-\\dados los valores se calcula tamaño en bits del index y del offset necesarios en la función splitAddress
+//dados los valores se calcula tamaño en bits del index y del offset necesarios en la función splitAddress
 class cache{
   private:
     int iTagSize, iIndexSize;
@@ -96,14 +96,10 @@ int main(int arcg, char* argv[]){
 
   //cantidad de accesos totales, hits y misses
   cache myCache(llParameter[0],llParameter[1],llParameter[2]);
-  int i = 0;
-  //while ( i < 1 ) {
+
   while ( getline (datos,line) ) {
     getline(datos,line);
     line.erase(line.begin()+8,line.end());
-
-  //  lAddr = 133333;
-    //i = 1;
     istringstream(line) >> std::hex >> lAddr;
   	bHit = myCache.readAddress(lAddr);
     if(bHit){
