@@ -10,7 +10,7 @@
 #
 ### El programa consiste en un simulador del comportamiento de una Memoria Cache para diferentes niveles de asociatividad en lenguaje de programación de alto nivel (C++). El programa puede cambiar en tres diferentes niveles de asociatividad y recibir del usuario los valores deseados para el Tamaño del Cache y el Tamaño del Bloque. La implementación utiliza como Política de Reemplazo de Bloques es Random.
 ### Se requiere incluir en el mismo directorio donde se ubica el programa un archivo .trace con las direcciones de memoria y datos y el tipo de solicitud (Lectura/Escritura). 
-### Se incluye el archivo main.cpp con el código de la implementación y un Makefile para realizar la compilación y creación del ejecutable. El Makefile utiliza gcc para la compilación, en caso de querer usar otro compilador omitir el uso del Makefile y usar el código correspondiente a preferencia.
+### Se incluye el archivo main.cpp con el código de la implementación y un Makefile para realizar la compilación y creación del ejecutable. El Makefile utiliza g++ para la compilación, en caso de querer usar otro compilador omitir el uso del Makefile y usar el código correspondiente a preferencia.
 
 ## Niveles de Asociatividad Disponibles (parámetro del código)
 #####           - Directo (*1*)
