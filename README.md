@@ -2,7 +2,7 @@
 ## Tarea Programada 1/IE-0521 Estructuras de Computadores Digitales II
 #
 ### Autores:
-####         Carla Vega J.    B
+####         Carla Vega J.    B06763
 ####         Lennon Núñez M.  B34943
 ### Profesor: 
 ####   José Daniel Hernández
@@ -22,7 +22,8 @@
     $ make -f Makefile
     $ ./cache <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
 #
-#### Se generará el ejecutable *cache*, el cuál utilizará el archivo *aligned.trace* ya incluido en el repositorio. Ingrese los parámetros requeridos y en pantalla se mostrará los resultados para cada solicitud del *.trace*. 
+#### Se generará el ejecutable *cache*, el cuál utilizará el archivo *aligned.trace* que deberá incluir en el directorio donde se encuentra el ejecutable. Ingrese los parámetros requeridos y en pantalla se mostrará los resultados de Hits, Total de solicitudes y Miss Rate para el *.trace*. 
 #
 ## Eliminando Archivos Generados
     $ make clean
+    #### Elimina el ejecutable
