@@ -12,7 +12,7 @@
 ### Se requiere incluir en el mismo directorio donde se ubica el programa un archivo .trace con las direcciones de memoria y datos y el tipo de solicitud (Lectura/Escritura). 
 ### Se incluye el archivo main.cpp con el código de la implementación y un Makefile para realizar la compilación y creación del ejecutable.
 
-## Niveles de Asociatividad Disponibles (<parámetro del código>)
+## Niveles de Asociatividad Disponibles (parámetro del código)
 #####           - Directo (*1*)
 #####           - 2-Way Associative (*2*)
 #####           - 4-Way Associative (*3*)
