@@ -15,12 +15,14 @@
 # 
 ## Parámetros de Entrada 
 ####   Asociatividad | Nivel de asociatividad deseado, esperando como parámetro los posibles valores enteros 1, 2 ó 3, según la asociatividad correspondiente.
-####   Tamaño del Cache | Tamaño del Cache deseado, esperando como parámetro un valor entero.
-####   Tamaño del Bloque | Tamaño del Bloque deseado, esperando como parámetro un valor entero.
+####   Tamaño del Cache | Tamaño del Cache deseado, esperando como parámetro un valor entero indicando los Bytes asignados.
+####   Tamaño del Bloque | Tamaño del Bloque deseado, esperando como parámetro un valor entero indicando los Bytes asignados.
 #
 ## Corriendo el Programa
     $ make -f Makefile
     $ ./cache <Asociatividad> <Tamaño del Cache> <Tamaño del Bloque>
+    ###Ejemplo: Probando 2-Way Set Associative, con tamaño de cache de 1024 B y tamaño del bloque de 255 B
+    $ ./cache 2 1024 255
 #
 #### Se generará el ejecutable *cache*, el cuál utilizará el archivo *aligned.trace* que deberá incluir en el directorio donde se encuentra el ejecutable. Ingrese los parámetros requeridos y en pantalla se mostrará los resultados de Hits, Total de solicitudes y Miss Rate para el *.trace*. 
 #
